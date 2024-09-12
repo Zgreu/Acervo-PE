@@ -122,3 +122,24 @@ article#nc:hover{
     box-shadow: 1px 0px 5px black;
 }
 
+footer{
+    background-color: white;
+
+    width: 87vw;
+    height: 50px;
+    margin: auto;
+    
+}
+footer a{
+    display: block;
+    padding: 18px 0px;
+}
+
+footer:hover{
+    background-color: rgb(231, 231, 231);
+
+    transition: 0.3s;
+    transform: translate(-2px);
+
+    box-shadow: 1px 0px 5px black;
+}
