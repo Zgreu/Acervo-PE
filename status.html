@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>status</h1>
+    <p id="pontos"> </p>
+    <ul>
+        <li id="força"></li> <input type="button" value="+1"  id="botao1" onclick="fm1()">
+        <li id="pnc"></li> <input type="button" value="+1" class="botao" onclick="paum1()">
+        <li id="paia"></li> <input type="button" value="+1"  class="botao" onclick="paim1()">
+    </ul>
+    <script>
+        
+        var ponto = 10
+         pontos.innerHTML = `${ponto}`
+        var pf = 0
+         força.innerHTML = `Força ${pf}` 
+        var ppau = 0 
+         pnc.innerHTML = `Pau No Cu ${ppau}`
+        var ppai = 0
+         paia.innerHTML = `paia ${ppai}`
+        
+
+
+        function fm1(){
+            força.innerHTML = `Força ${pf}` 
+            pontos.innerHTML = `${ponto}`
+            pf ++
+            ponto --
+            
+
+            
+        }
+        function paum1(){
+            pnc.innerHTML = `Pau No Cu ${ppau}`
+            pontos.innerHTML = `${ponto}`
+            ppau ++
+            ponto --
+        }
+        function paim1(){
+            paia.innerHTML = `paia ${ppai}`
+            pontos.innerHTML = `${ponto}`
+            ppai ++
+            ponto --
+        }
+    </script>
+</body>
+</html>
