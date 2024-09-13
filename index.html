@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a#link{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <input type="text" name="senha" id="senha">
     <input type="button" value="Enviar" onclick="verificar()">
-    <a href="Poderes/poderes.html"></a>
-    <div id="link"></div>
+    <a id="link" href="Poderes/poderes.html">clique aqui</a>
     <script>
 
         function  verificar() {
@@ -17,9 +21,10 @@
             var texto = document.getElementById('senha')
             var link = document.getElementById('link')
 
+
             var correto = (texto.value)
             if(correto == 'legal'){
-            link.innerHTML = "<a href="Poderes/poderes.html">Clique Aqui</a> bom dia"
+            link.style.display = 'inline'
             }
         }
     </script>
