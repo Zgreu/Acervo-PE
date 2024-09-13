@@ -3,52 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
     <style>
+        li{
+            list-style: none;
+        }
+        p#pontos{
+            margin-left: 30px;
+            color: red;
+        }
+        div#caixa {
+            background-color: black;
+            color: white;
+
+            display: inline-block;
+
+            margin-left: 30px;
+            cursor: help;
+
+            width: 30px;
+            height: 30px;
+            position: relative;
+
+            border-radius: 30px;
+            
+        }
+
+        span.material-symbols-outlined{
+            margin: 2px 2.5px;
+        }
         
+        div.aaa{
+            color: blue;
+            display: inline-block;
+        }
+        div#atributos{
+            display: none;
+            cursor: help;
+        }
     </style>
 </head>
 <body>
     <h1>status</h1>
+    
     <p id="pontos"> </p>
     <ul>
-        <li id="força"></li> <input type="button" value="+1"  id="botao1" onclick="fm1()">
-        <li id="pnc"></li> <input type="button" value="+1" class="botao" onclick="paum1()">
-        <li id="paia"></li> <input type="button" value="+1"  class="botao" onclick="paim1()">
+        <li id="força" ><li> <input type="button" value="+1"  id="botao1" onclick="fm1()">
+        <li id="agi"></li> <input type="button" value="+1" class="botao" onclick="paum1()">
+        <li id="cons"></li> <input type="button" value="+1"  class="botao" onclick="paim1()">
     </ul>
+    <div id="caixa" onmouseenter="pontos()" onmouseout="saidap()" >
+        <span class="material-symbols-outlined">
+            question_mark
+            </span>
+    </div>
+    <div id="atributos" onmouseenter="pontos()" onmouseout="saidap()">
+        <img src="valores-de-atributos-e-seus-modificadores.jpg" alt="">
+    </div>
     <script>
-        
+        var atributos = document.getElementById('atributos')
         var ponto = 10
          pontos.innerHTML = `${ponto}`
         var pf = 0
-         força.innerHTML = `Força ${pf}` 
-        var ppau = 0 
-         pnc.innerHTML = `Pau No Cu ${ppau}`
-        var ppai = 0
-         paia.innerHTML = `paia ${ppai}`
+         força.innerHTML = `Força <div class="aaa">${pf}</div>` 
+        var pagi = 0 
+         agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div>`
+        var pcons = 0
+         cons.innerHTML = `constituição <div class="aaa">${pcons}</div>`
+        var caixa = document.getElementById('caixa')
         
 
-
         function fm1(){
-            força.innerHTML = `Força ${pf}` 
+            força.innerHTML = `Força <div class="aaa">${pf}</div>` 
             pontos.innerHTML = `${ponto}`
             pf ++
             ponto --
-            
-
-            
         }
         function paum1(){
-            pnc.innerHTML = `Pau No Cu ${ppau}`
+            agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div>`
             pontos.innerHTML = `${ponto}`
-            ppau ++
+            pagi ++
             ponto --
         }
         function paim1(){
-            paia.innerHTML = `paia ${ppai}`
+            cons.innerHTML = `constituição <div class="aaa">${pcons}</div>`
             pontos.innerHTML = `${ponto}`
-            ppai ++
+            pcons ++
             ponto --
+        }
+        function pontos(){
+            caixa.style.display = "none"
+            atributos.style.display = 'block'
+            if(caixa.style.display == 'block'){
+                atributos.style.display = 'none'
+            }
+        }
+        function saidap(){
+            atributos.style.display = 'none'
+            caixa.style.display = "block"
+            if(atributos.style.display = 'block'){
+                caixa.style.display = 'none'
+            }
         }
     </script>
 </body>
