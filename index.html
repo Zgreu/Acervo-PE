@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" name="senha" id="senha">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <a href="Poderes/poderes.html"></a>
+    <div id="link"></div>
+    <script>
+
+        function  verificar() {
+
+            var texto = document.getElementById('senha')
+            var link = document.getElementById('link')
+
+            var correto = (texto.value)
+            if(correto == 'legal'){
+            link.innerHTML = "<a href="Poderes/poderes.html">Clique Aqui</a> bom dia"
+            }
+        }
+    </script>
 </body>
 </html>
