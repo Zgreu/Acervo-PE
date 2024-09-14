@@ -42,6 +42,10 @@
             display: none;
             cursor: help;
         }
+
+        div#atributos img{
+            width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -53,12 +57,12 @@
         <li id="agi"></li> <input type="button" value="+1" class="botao" onclick="paum1()">
         <li id="cons"></li> <input type="button" value="+1"  class="botao" onclick="paim1()">
     </ul>
-    <div id="caixa" onmouseenter="pontos()" onmouseout="saidap()" >
+    <div id="caixa" onclick="pontos()"  >
         <span class="material-symbols-outlined">
             question_mark
             </span>
     </div>
-    <div id="atributos" onmouseenter="pontos()" onmouseout="saidap()">
+    <div id="atributos"  onclick="saidap()">
         <img src="valores-de-atributos-e-seus-modificadores.jpg" alt="">
     </div>
     <script>
@@ -72,23 +76,21 @@
         var pcons = 0
          cons.innerHTML = `constituição <div class="aaa">${pcons}</div>`
         var caixa = document.getElementById('caixa')
-        
 
         function fm1(){
             força.innerHTML = `Força <div class="aaa">${pf}</div>` 
-            pontos.innerHTML = `${ponto}`
             pf ++
             ponto --
+            
+            
         }
         function paum1(){
             agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div>`
-            pontos.innerHTML = `${ponto}`
             pagi ++
             ponto --
         }
         function paim1(){
             cons.innerHTML = `constituição <div class="aaa">${pcons}</div>`
-            pontos.innerHTML = `${ponto}`
             pcons ++
             ponto --
         }
@@ -102,10 +104,11 @@
         function saidap(){
             atributos.style.display = 'none'
             caixa.style.display = "block"
-            if(atributos.style.display = 'block'){
+            if(atributos.style.display == 'block'){
                 caixa.style.display = 'none'
             }
         }
+        
     </script>
 </body>
 </html>
