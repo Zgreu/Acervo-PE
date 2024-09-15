@@ -57,7 +57,7 @@
         <li id="agi"></li> <input type="button" value="+1" class="botao" onclick="paum1()">
         <li id="cons"></li> <input type="button" value="+1"  class="botao" onclick="paim1()">
     </ul>
-    <div id="caixa" onclick="pontos()"  >
+    <div id="caixa" onclick="interoga()"  >
         <span class="material-symbols-outlined">
             question_mark
             </span>
@@ -83,6 +83,7 @@
             ponto --
             
             
+            
         }
         function paum1(){
             agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div>`
@@ -94,7 +95,7 @@
             pcons ++
             ponto --
         }
-        function pontos(){
+        function interoga(){
             caixa.style.display = "none"
             atributos.style.display = 'block'
             if(caixa.style.display == 'block'){
@@ -109,6 +110,12 @@
             }
         }
         
+        switch(força){
+                case 2: 
+                força.innerHTML = `Força <div class="aaa">${pf}</div> + (1)`
+                break   
+                    
+            } 
     </script>
 </body>
 </html>
