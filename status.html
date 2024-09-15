@@ -6,9 +6,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
     <style>
+        body{
+            background-color: aqua;
+        }
         li{
             list-style: none;
+            
+            margin-bottom: 20px;
         }
+        div#divfor li, input{
+            display: inline-block;
+            margin-right: 5px;
+           
+        }
+        div#divagi li, input{
+            display: inline-block;
+            margin-right: 5px;        
+        }
+        div#divcons li, input{
+            display: inline-block;
+            margin-right: 5px;
+        }
+            
         p#pontos{
             margin-left: 30px;
             color: red;
@@ -30,6 +49,15 @@
             
         }
 
+        div#caixa:hover{
+            border: 2px solid rgb(255, 255, 255) ;
+
+            
+            transform: translatey(-3px);
+            transition: 0.2s;
+
+        }
+
         span.material-symbols-outlined{
             margin: 2px 2.5px;
         }
@@ -43,8 +71,11 @@
             cursor: help;
         }
 
+        
+
         div#atributos img{
             width: 300px;
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -53,9 +84,17 @@
     
     <p id="pontos"> </p>
     <ul>
-        <li id="força" ><li> <input type="button" value="+1"  id="botao1" onclick="fm1()">
-        <li id="agi"></li> <input type="button" value="+1" class="botao" onclick="paum1()">
-        <li id="cons"></li> <input type="button" value="+1"  class="botao" onclick="paim1()">
+
+        <div id="divfor">
+            <li id="força" ><li> <input type="button" value="+1"  id="botao1" onclick="fm1()">
+        </div>
+        <div id="divagi">
+            <li id="agi"></li> <input type="button" value="+1" id="botao2" onclick="paum1()">
+        </div>
+        <div id="divcons">
+            <li id="cons"></li> <input type="button" value="+1"  id="botao3" onclick="paim1()">
+        </div>
+        
     </ul>
     <div id="caixa" onclick="interoga()"  >
         <span class="material-symbols-outlined">
@@ -67,33 +106,165 @@
     </div>
     <script>
         var atributos = document.getElementById('atributos')
-        var ponto = 10
+        var ponto = 30
          pontos.innerHTML = `${ponto}`
-        var pf = 0
-         força.innerHTML = `Força <div class="aaa">${pf}</div>` 
-        var pagi = 0 
-         agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div>`
-        var pcons = 0
-         cons.innerHTML = `constituição <div class="aaa">${pcons}</div>`
+         var atrf = -5
+         var atragi = -5
+         var atrcons = -5
+         var pf = 1
+         força.innerHTML = `Força <div class="aaa">${pf}</div> (${atrf})` 
+        var pagi = 1 
+         agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div> (${atragi})`
+        var pcons = 1
+         cons.innerHTML = `constituição <div class="aaa">${pcons}</div> (${atrcons})`
         var caixa = document.getElementById('caixa')
+        var bf = document.getElementById('botao1')
+        var ba = document.getElementById('botao2')
+        var bc = document.getElementById('botao3')
+
+        
+       
 
         function fm1(){
-            força.innerHTML = `Força <div class="aaa">${pf}</div>` 
+            força.innerHTML = `Força <div class="aaa">${pf}</div> (${atrf})`
+            pontos.innerHTML = `${ponto}`
+            
+
+                if(pf <= 3 ){
+                atrf = -4
+            } else if (pf <= 5 ){
+                atrf = -3
+            } else if (pf <= 7 ){
+                atrf = -2
+            } else if (pf <= 9 ){
+                atrf = -1
+            } else if (pf <= 11 ){
+                atrf = 0
+            } else if (pf <= 13 ){
+                atrf = '+1'
+            } else if (pf <= 15 ){
+                atrf = '+2'
+            } else if (pf <= 17 ){
+                atrf = '+3'
+            } else if (pf <= 19 ){
+                atrf = '+4'
+            } else if (pf <= 21 ){
+                atrf = '+5'
+            } else if (pf <= 23 ){
+                atrf = '+6'
+            } else if (pf <= 25 ){
+                atrf = '+7'
+            } else if (pf <= 27 ){
+                atrf = '+8'
+            } else if (pf <= 29 ){
+                atrf = '+9'
+            } else if (pf <= 30 ){
+                atrf = '+10 MAX'
+            } else {
+                bf.style.display = 'none' 
+            }
+            
+
+            if(ponto <= -1){
+                bf.style.display = 'none' 
+                ba.style.display = 'none'
+                bc.style.display = 'none'
+            }
             pf ++
             ponto --
             
-            
-            
         }
         function paum1(){
-            agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div>`
+            agi.innerHTML = `Agilidade <div class="aaa">${pagi}</div> (${atragi})`
+            pontos.innerHTML = `${ponto}`
             pagi ++
             ponto --
+
+                if(pagi <= 3){
+                atragi = -4
+                
+            } else if (pagi <= 5){
+                atragi = -3
+            } else if (pagi <= 7){
+                atragi = -2
+            } else if (pagi <= 9){
+                atragi = -1
+            } else if (pagi <= 11 ){
+                atragi = 0
+            } else if (pagi <= 13 ){
+                atragi = '+1'
+            } else if (pagi <= 15 ){
+                atragi = '+2'
+            } else if (pagi <= 17 ){
+                atragi = '+3'
+            } else if (pagi <= 19 ){
+                atragi = '+4'
+            } else if (pagi <= 21 ){
+                atragi = '+5'
+            } else if (pagi <= 23 ){
+                atragi = '+6'
+            } else if (pagi <= 25 ){
+                atragi = '+7'
+            } else if (pagi <= 27 ){
+                atragi = '+8'
+            } else if (pagi <= 29 ){
+                atragi = '+9'
+            } else if (pagi <= 30 ){
+                atragi = '+10 MAX'
+            } else {
+                ba.style.display = 'none' 
+            }
+
+            if(ponto <= -1){
+                bf.style.display = 'none' 
+                ba.style.display = 'none'
+                bc.style.display = 'none'
+            }
         }
         function paim1(){
-            cons.innerHTML = `constituição <div class="aaa">${pcons}</div>`
+            cons.innerHTML = `constituição <div class="aaa">${pcons}</div> (${atrcons})`
             pcons ++
             ponto --
+
+                if(pcons <= 3){
+                atrcons = -4 
+            } else if (pcons <= 5 ){
+                atrcons = -3
+            } else if (pcons <= 7 ){
+                atrcons = -2
+            } else if (pcons <= 9 ){
+                atrcons = -1
+            } else if (pcons <= 11 ){
+                atrcons = 0
+            } else if (pcons <= 13 ){
+                atrcons = '+1'
+            } else if (pcons <= 15 ){
+                atrcons = '+2'
+            } else if (pcons <= 17 ){
+                atrcons = '+3'
+            } else if (pcons <= 19 ){
+                atrcons = '+4'
+            } else if (pcons <= 21 ){
+                atrcons = '+5'
+            } else if (pcons <= 23 ){
+                atrcons = '+6'
+            } else if (pcons <= 25 ){
+                atrcons = '+7'
+            } else if (pcons <= 27 ){
+                atrcons = '+8'
+            } else if (pcons <= 29 ){
+                atrcons = '+9'
+            } else if (pcons <= 30 ){
+                atrcons = '+10 MAX'
+            } else {
+                bc.style.display = 'none' 
+            }
+
+            if(ponto <= -1){
+                bf.style.display = 'none' 
+                ba.style.display = 'none'
+                bc.style.display = 'none'
+            }
         }
         function interoga(){
             caixa.style.display = "none"
@@ -109,13 +280,7 @@
                 caixa.style.display = 'none'
             }
         }
-        
-        switch(força){
-                case 2: 
-                força.innerHTML = `Força <div class="aaa">${pf}</div> + (1)`
-                break   
-                    
-            } 
+       
     </script>
 </body>
 </html>
