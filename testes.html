@@ -49,11 +49,32 @@
     <div id="tx3">
         <p>eu sou o texto 3</p>
     </div>
+    <div >
+        <input type="text" name="pes" id="pes" onchange="senha()">
+        <a id="link" href="index.html"><button>Enviar</button></a>
+        <a id="linkfake"href="#"><button>Enviar</button></a>
+
+    </div>
     
     <script>
         var caixa1 = document.getElementById('tx1')
         var caixa2 = document.getElementById('tx2')
         var caixa3 = document.getElementById('tx3')
+        var pes = document.getElementById('pes')
+        var botao = document.getElementById('botao')
+        var link = document.getElementById('link')
+         link.style.display = 'none'
+        var linkfake = document.getElementById('linkfake')
+         linkfake.style.display = 'Inline-block'
+
+         function senha(){
+            if(pes.value == 'poderes' || pes.value == 'Poderes'){
+                link.style.display = 'inline-block'
+                linkfake.style.display = 'none'
+            } 
+         }
+       
+        
 
         function apenas1(){
             caixa1.style.display = 'block'
