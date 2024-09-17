@@ -15,10 +15,26 @@ var agilidade = document.getElementById('agilidade')
 var bagi = document.getElementById('botaoagi')
 var bagi10 = document.getElementById('botaoagi10')
 var ptagi = 1
-agilidade.innerHTML += `Agilidade = ${ptagi} (${mod})`
+agilidade.innerHTML += `Agilidade: ${ptagi} (${mod})`
 
 
 function botaofor(){
+
+    switch(ptfor){
+        case 0: 
+            mod = -5
+        break
+
+        case 1:
+            mod = -4
+        break
+
+        case 3:
+            mod = -3
+        default:
+        break
+    }
+
     pt --
     ptfor ++
     pontos.innerHTML = `Pontos: <div id="pt">${pt}<div>`
@@ -32,19 +48,24 @@ function botaofor(){
     } else if (pt <= 9){
         bagi10.style.display = "none"
 
-    }else if(ptfor >= 30){
+    }
+
+    if(ptfor == 30){
         força.innerHTML += (' MAX')
         bfor.style.display = 'none'
 
     }
+    
+
 }
     
 
 function botaoagi(){
     ptagi ++
     pt --
+    
     pontos.innerHTML = `Pontos: <div id="pt">${pt}<div>`
-    agilidade.innerHTML = `Agilidade = ${ptagi} (${mod})`
+    agilidade.innerHTML = `Agilidade: ${ptagi} (${mod})`
 
     if(ptagi >= 30){
         agilidade.innerHTML += (' MAX')
@@ -64,7 +85,7 @@ function botaoagi(){
     ptagi += 10
     pt -= 10
     pontos.innerHTML = `Pontos: <div id="pt">${pt}<div>`
-    agilidade.innerHTML = `Agilidade = ${ptagi} (${mod})`
+    agilidade.innerHTML = `Agilidade: ${ptagi} (${mod})`
 
     if(pt == 0){
         bfor.style.display = 'none'
@@ -74,5 +95,8 @@ function botaoagi(){
     } else if (pt <= 9 || ptagi >= 21){
         bagi10.style.display = "none"
     }
+
+    
     
  }
+
