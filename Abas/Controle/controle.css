@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Ciberfuturo";
+    src: url(Fonts/RETROTECH.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -43,9 +50,14 @@ div#abas{
 }
 div#abas input{
     height: 28px;
-
     border: none;
+    
+}
 
+input#poderes{
+    background-color: blueviolet;
+    padding: 5px;
+    font-family: "Ciberfuturo";
 }
 
 .material-symbols-outlined {
