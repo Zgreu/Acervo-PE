@@ -1,7 +1,7 @@
         var ola = document.getElementById('ola')
             ola.style.display = "none"
         var nome = document.getElementById('nome')
-        function senha(event){
+        function senha(){
 
         let sen = document.getElementById('senha')
 
