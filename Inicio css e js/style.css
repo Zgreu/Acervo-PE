@@ -7,21 +7,21 @@
     font-size: normal;
 }
 
-
 *{
     margin: 0px;
     padding: 0px;
-
+    
 }
 
 body{
     background-color: black;
-    position: relative;
+    
     width: 100vw;
-    height: 100vh;
-
+    height: 100vw;
     font-family: "Ciberfuturo";
     letter-spacing: 3px;
+    overflow: hidden;
+    
 }
 
 section{
@@ -30,6 +30,8 @@ section{
     top: 50%;
     transform: translate(-50%, -50%);
     
+    
+    
 }
 div{
     color: lightblue;
@@ -37,6 +39,12 @@ div{
 
     text-align: center;
     width: 1000px;
+}
+div#nome{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 div label, input{
     font-size: 1.7em;
@@ -67,3 +75,18 @@ div#ola a{
 
 }
 
+div.opacidade{
+    opacity: 1;
+    transition: opacity 1s ease;
+    
+}
+div.mudando{
+    opacity: 0;
+}
+
+div.opacidade.mudando{
+    opacity: .0;
+    transition: opacity 1s ease;
+    
+    
+}
