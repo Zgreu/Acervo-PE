@@ -7,7 +7,7 @@
             nome.style.opacity = "0"
             nome.style.transition = 'display .3s ease'
             nome.style.display = "none"
-            ola.innerHTML = '<a href="../Abas/poderes/poderes.html">OLA</a>'
+            ola.innerHTML = '<a href="Abas/poderes/poderes.html">OLA</a>'
             
             
         }
