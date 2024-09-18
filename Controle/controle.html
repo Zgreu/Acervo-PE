@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="controle.css">
+    <link rel="stylesheet" href="controle.mdq.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Controle</title>
 </head>
 <body>
-    <section>
-        <div id="pes">
-            <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisa">
+    <header>
+        <div id="pes"  class="centro">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisa"  >
         </div>
-        <div id="icone">
-            <span class="material-symbols-outlined">
+        <div id="icone" onclick="icone()"  class="centro">
+            <span class="material-symbols-outlined"  >
                 menu
                 </span>
         </div>
-        <div>
-
+        <div id="abas">
+            <input type="button" value="Poderes">
         </div>
-    </section>
+    </header>
     <section id="conteudo">
         <iframe src="Poderes/poderes.html" frameborder="0"></iframe>
     </section>
+    <script src="controle.js"></script>
 </body>
 </html>

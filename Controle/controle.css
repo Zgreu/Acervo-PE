@@ -10,9 +10,8 @@ body{
     background-color: black;
 }
 
-section{
+div.centro{
     text-align: center;
-
     margin-top: 5px;
 }
 
@@ -34,6 +33,19 @@ input#pesquisa{
 div#icone{
     background-color: rgb(173, 216, 230);
     box-shadow: 0px 0px 10px 3px rgba(143, 227, 255, 0.63);
+    cursor: pointer;
+    
+}
+div#abas{
+    display: none;
+    height: 28px;
+
+}
+div#abas input{
+    height: 28px;
+
+    border: none;
+
 }
 
 .material-symbols-outlined {
