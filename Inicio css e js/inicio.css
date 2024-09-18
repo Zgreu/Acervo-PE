@@ -69,16 +69,6 @@ div input{
 }
 
 
-div#ola a{
-    font-size: 5em;
-    text-decoration: none;
-    color: lightblue;
-    text-shadow: 1px 1px 5px rgb(0, 4, 255);
-    text-align: center;
-    width: 1000px;
-
-}
-
 div.opacidade{
     opacity: 1;
     transition: opacity 1s ease;
