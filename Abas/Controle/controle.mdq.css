@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
+
     div#icone{
         display: none;
     }
     div#abas{
         display: block;
     }
-    
+    section#conteudo iframe{
+        width: 99.4vw;
+    }
 }

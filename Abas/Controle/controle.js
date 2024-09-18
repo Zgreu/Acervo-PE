@@ -8,8 +8,8 @@ iframep = document.getElementById('ifpoderes')
        
 
 function pesquisa(){
-    pes.value = pes.toLowerCase()
-    
+
+
 
     switch(pes.value){
         case 'poderes':
@@ -17,8 +17,7 @@ function pesquisa(){
         break
 
         case 'elementos':
-        iframep[1].style.display = 'block'
-        iframep[0].style.display = 'none'
+            iframep.src = "../Poderes/Elementos/elementos.html"
         break
 
 
@@ -46,7 +45,5 @@ function poderes(){
 }   
 
 function elementos(){
-    iframep[1].style.display = 'block'
-    if(iframep[1].style.display == 'block')
-        iframep[0].style.display = 'none'
+    iframep.src = "../Poderes/Elementos/elementos.html"
 }
