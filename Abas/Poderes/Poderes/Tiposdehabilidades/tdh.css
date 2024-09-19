@@ -23,8 +23,9 @@ section{
 }
 
 header{
-    outline: 1px solid lightblue;
-    border: 1px solid rgb(252, 252, 252);
+    outline: 2px solid lightblue;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 10px rgb(255, 255, 255);
 
     color: lightblue;
     text-shadow: 1px 1px 5px rgb(0, 4, 255);
@@ -33,14 +34,14 @@ header{
 }
 
 article{
-    outline: 1px solid lightblue;
-    border: 1px solid red;
+    outline: 2px solid lightblue;
 
-    margin-top: 2px;
+    margin-top: 30px;
 }
 
 div{
-    padding: 10px 0px;
+    padding: 10px 10px;
+    padding-bottom: 20px;
     
 }
 
@@ -57,4 +58,14 @@ h2{
 div#body{
     color: rgb(253, 231, 169);
     text-shadow: 1px 1px 5px rgb(255, 187, 0);
+    border: 2px solid rgb(255, 187, 0);
+    box-shadow: inset 0px 0px 10px rgb(255, 187, 0);
+    
+}
+
+div#cpc{
+    color: rgb(255, 113, 113);
+    text-shadow: 1px 1px 5px red;
+    border: 2px solid red;
+    box-shadow: inset 0px 0px 10px red;
 }
