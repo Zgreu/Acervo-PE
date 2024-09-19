@@ -41,7 +41,7 @@ function icone(){
 }
 
 function poderes(){
-    iframep.src = "../Poderes/poderes.html"
+    iframep.src = "../Poderes/Poderes/poderes.html"
 }   
 
 function elementos(){
