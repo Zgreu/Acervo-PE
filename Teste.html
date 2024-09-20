@@ -6,14 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="teste" id="teste" onchange="teste()">
-    <script>
-        function teste(){
-            let res = document.getElementById('teste')
-            res = res.value.toLowerCase()
-            if(res == "oi")
-            alert(res)
+    <input type="button" value="Clique" onclick="batalha()">
+    <input type="Number" name="dado" id="dado" onchange="batalha()">
+    <div id="res">
 
+    </div>
+    <script>
+        function batalha(){
+    let num1 = parseInt(Math.random()*20) 
+    let num2 = parseInt(Math.random()*20)
+    let dano = parseInt(Math.random()*5) + 1
+    let danocrt = parseInt(Math.random()*5) + 1
+    let digitado = document.querySelector('#dado')
+    let res = document.querySelector('#res')
+
+
+    if(digitado.value.length == 0){
+        digitado = ''
+    } else if(digitado.value > 20){
+
+        alert('coloque o numero que caiu no dado')
+
+    } else if(confirm(`o valor que voce digitou foi ${digitado.value} tem certeza que esse é o valor?`) == true){
+        
+        
+            
         }
+    } else if(confirm(`o valor que voce digitou foi ${digitado.value} tem certeza que esse é o valor?`) == false){
+        
+    }
+
+
+
+    if(num2 - num1 >= 10){
+        res.innerHTML = (` Droga um Critico ${num1} maior ${num2}<br> Ele te deu ${dano + danocrt} (${dano} + ${danocrt}) de dano`)
+    } else if(num1 - num2 >= 10){
+        res.innerHTML = (`Boa um Critico ${num1} maior ${num2} <br> Você causo ${dano + danocrt} (${dano} + ${danocrt}) de dano`)
+    } else if(num1 > num2){
+        res.innerHTML = (`Boa ${num1} ganha de  ${num2} <br> Ele Você causo ${dano} de dano`)
+    } else if(num1 < num2){
+        res.innerHTML = (`Droga ${num1} não ganha  ${num2} <br> Ele te deu ${dano} de dano`)
+    } else if (num1 == num2){ 
+        res.innerHTML = (`Empate ${num1} é o mesmo que ${num2}`)
+    }
+}
     </script>
 </html>
