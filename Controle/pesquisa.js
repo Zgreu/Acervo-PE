@@ -1,8 +1,7 @@
 function pesquisa(){
     var pes = document.getElementById('pesquisa')
-    pes = pes.value.toLowerCase()
 
-    switch(pes){
+    switch(pes.value.toLowerCase()){
         case 'poderes':
             iframep.src = "../Abas/Poderes/Poderes/poderes.html"
         break
@@ -16,11 +15,11 @@ function pesquisa(){
         break
 
         case 'tipos':
-        iframep.src = "../Abas/Poderes/Tiposdehabilidades/tiposdehabilidade.html"
+            iframep.src = "../Abas/Poderes/Tiposdehabilidades/tiposdehabilidade.html"
         break
         
         case 'tdh':
-        iframep.src = "../Abas/Poderes/Tiposdehabilidades/tiposdehabilidade.html"
+            iframep.src = "../Abas/Poderes/Tiposdehabilidades/tiposdehabilidade.html"
         break
         
         case 'body':
@@ -54,5 +53,7 @@ function pesquisa(){
         alert('Esta pesquisa não vai a lugar nenhum')
         break
 
+        
    }
+   pes.value = ""
 }

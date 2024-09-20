@@ -11,14 +11,13 @@
             
         }
 
-
         nome.addEventListener("transitionend", () => {
             nome.style.display = "none"
             ola.classList.remove('mudando')
             ola.classList.add('opacidade');
 
         })
-
+        
         }
 
 
