@@ -61,7 +61,10 @@ div{
 div.tipos{
     height: 20px;
     overflow: hidden;
+
 }
+
+
 
 div#body{
     color: rgb(253, 231, 169);
@@ -85,7 +88,7 @@ div#cpc{
 }
 
 div#cpc:hover{
-    height: 85px;
+    height: 155px;
     transition: .5s;
 }
 div#pjt{
