@@ -78,10 +78,10 @@ div#pjt{
 }
 
 div#foco{
-    color: rgb(122, 195, 255);
-    text-shadow: 1px 1px 5px rgb(0, 140, 255);
-    border: 2px solid rgb(0, 140, 255);
-    box-shadow: inset 0px 0px 10px rgb(0, 140, 255);
+    color: rgb(229, 126, 255);
+    text-shadow: 1px 1px 5px rgb(204, 0, 255);
+    border: 2px solid rgb(204, 0, 255);
+    box-shadow: inset 0px 0px 10px rgb(204, 0, 255);
 }
 #textb{
     margin-top: 5px;
