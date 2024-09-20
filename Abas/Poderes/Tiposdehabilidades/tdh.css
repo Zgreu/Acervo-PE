@@ -88,7 +88,7 @@ div#cpc{
 }
 
 div#cpc:hover{
-    height: 5.8em;
+    height: 10.5ex;
     transition: .5s;
 }
 div#pjt{
@@ -100,7 +100,7 @@ div#pjt{
 }
 
 div#pjt:hover{
-    height: 4.6em;
+    height: 8ex;
     transition: .5s;
 }
 div#foco{
