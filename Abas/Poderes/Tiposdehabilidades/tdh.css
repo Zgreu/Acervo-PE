@@ -34,15 +34,9 @@ header{
 }
 
 article{
-    outline: 2px solid lightblue;
+    
 
     margin-top: 30px;
-}
-
-div{
-    padding: 10px 10px;
-    padding-bottom: 20px;
-    
 }
 
 h1{
@@ -53,6 +47,20 @@ h1{
 h2{
     font-size: 1.3em;
     margin: 5px 0px ;
+    margin-bottom: 10px;
+}
+
+div{
+    padding: 10px 10px;
+    padding-bottom: 20px;
+    margin-bottom: 2px;
+    
+}
+
+
+div.tipos{
+    height: 20px;
+    overflow: hidden;
 }
 
 div#body{
@@ -60,7 +68,12 @@ div#body{
     text-shadow: 1px 1px 5px rgb(255, 187, 0);
     border: 2px solid rgb(255, 187, 0);
     box-shadow: inset 0px 0px 10px rgb(255, 187, 0);
-    
+    transition: .3s;
+
+}
+div#body:hover{
+    height: 75px;
+    transition: .5s;
 }
 
 div#cpc{
@@ -68,20 +81,36 @@ div#cpc{
     text-shadow: 1px 1px 5px red;
     border: 2px solid red;
     box-shadow: inset 0px 0px 10px red;
+    transition: .3s;
 }
 
+div#cpc:hover{
+    height: 85px;
+    transition: .5s;
+}
 div#pjt{
     color: rgb(122, 195, 255);
     text-shadow: 1px 1px 5px rgb(0, 140, 255);
     border: 2px solid rgb(0, 140, 255);
     box-shadow: inset 0px 0px 10px rgb(0, 140, 255);
+    transition: .3s;
 }
 
+div#pjt:hover{
+    height: 70px;
+    transition: .5s;
+}
 div#foco{
     color: rgb(229, 126, 255);
     text-shadow: 1px 1px 5px rgb(204, 0, 255);
     border: 2px solid rgb(204, 0, 255);
     box-shadow: inset 0px 0px 10px rgb(204, 0, 255);
+    transition: .3s;
+}
+
+div#foco:hover{
+    height: 110px;
+    transition: .5s;
 }
 #textb{
     margin-top: 5px;
