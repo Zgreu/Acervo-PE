@@ -90,6 +90,7 @@ div#cpc{
 div#cpc:hover{
     height: 16vh;
     transition: .5s;
+    padding-bottom: 5px;
 }
 div#pjt{
     color: rgb(122, 195, 255);
