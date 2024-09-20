@@ -75,8 +75,9 @@ div#body{
 
 }
 div#body:hover{
-    height: 4.8em;
+    height: 14vh;
     transition: .5s;
+    padding-bottom: 5px;
 }
 
 div#cpc{
@@ -88,7 +89,7 @@ div#cpc{
 }
 
 div#cpc:hover{
-    height: 16vh;
+    height: 17vh;
     transition: .5s;
     padding-bottom: 5px;
 }
@@ -98,11 +99,13 @@ div#pjt{
     border: 2px solid rgb(0, 140, 255);
     box-shadow: inset 0px 0px 10px rgb(0, 140, 255);
     transition: .3s;
+    
 }
 
 div#pjt:hover{
-    height: 8ex;
+    height: 14vh;
     transition: .5s;
+    padding-bottom: 5px;
 }
 div#foco{
     color: rgb(229, 126, 255);
@@ -113,8 +116,9 @@ div#foco{
 }
 
 div#foco:hover{
-    height: 7.3em;
+    height: 21vh;
     transition: .5s;
+    padding-bottom: 5px;
 }
 #textb{
     margin-top: 5px;
