@@ -88,7 +88,7 @@ div#cpc{
 }
 
 div#cpc:hover{
-    height: 10.5ex;
+    height: 14vh;
     transition: .5s;
 }
 div#pjt{
