@@ -69,3 +69,22 @@ div#cpc{
     border: 2px solid red;
     box-shadow: inset 0px 0px 10px red;
 }
+
+div#pjt{
+    color: rgb(122, 195, 255);
+    text-shadow: 1px 1px 5px rgb(0, 140, 255);
+    border: 2px solid rgb(0, 140, 255);
+    box-shadow: inset 0px 0px 10px rgb(0, 140, 255);
+}
+
+div#foco{
+    color: rgb(122, 195, 255);
+    text-shadow: 1px 1px 5px rgb(0, 140, 255);
+    border: 2px solid rgb(0, 140, 255);
+    box-shadow: inset 0px 0px 10px rgb(0, 140, 255);
+}
+#textb{
+    margin-top: 5px;
+    color: rgb(182, 182, 182);
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+}
