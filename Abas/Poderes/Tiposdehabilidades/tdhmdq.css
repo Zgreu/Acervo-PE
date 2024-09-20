@@ -9,4 +9,24 @@
         width: 100vw;
         
     }
+
+    div#body:hover{
+        height: 55px;
+        transition: .5s;
+    }
+
+    div#cpc:hover{
+        height: 70px;
+        transition: .5s;
+    }
+
+    div#pjt:hover{
+        height: 55px;
+        transition: .5s;
+    }
+
+    div#foco:hover{
+        height: 80px;
+        transition: .5s;
+    }
 }
