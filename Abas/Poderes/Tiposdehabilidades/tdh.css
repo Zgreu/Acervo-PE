@@ -75,7 +75,7 @@ div#body{
 
 }
 div#body:hover{
-    height: 75px;
+    height: 4.8em;
     transition: .5s;
 }
 
@@ -88,7 +88,7 @@ div#cpc{
 }
 
 div#cpc:hover{
-    height: 155px;
+    height: 5.8em;
     transition: .5s;
 }
 div#pjt{
@@ -100,7 +100,7 @@ div#pjt{
 }
 
 div#pjt:hover{
-    height: 70px;
+    height: 4.6em;
     transition: .5s;
 }
 div#foco{
@@ -112,7 +112,7 @@ div#foco{
 }
 
 div#foco:hover{
-    height: 110px;
+    height: 7.3em;
     transition: .5s;
 }
 #textb{
